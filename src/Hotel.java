@@ -33,5 +33,4 @@ public class Hotel {
         }
         return null;
     }
-
 }
