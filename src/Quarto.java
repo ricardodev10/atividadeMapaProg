@@ -1,14 +1,17 @@
 public class Quarto {
+    // Atributos
     private int numero;
     private double precoDiaria;
     private boolean disponivel;
 
+    // Construtor
     public Quarto(int numero, double precoDiaria) {
         this.numero = numero;
         this.precoDiaria = precoDiaria;
         this.disponivel = true;
     }
 
+    // Métodos
     public int getNumero() {
         return this.numero;
     }
