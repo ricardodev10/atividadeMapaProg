@@ -20,7 +20,6 @@ public class Hotel {
     }
 
     public void adicionarQuarto(Quarto quarto) {
-        quartos = new ArrayList();
         quartos.add(quarto);
     }
 
@@ -30,12 +29,12 @@ public class Hotel {
 
     public Quarto buscarQuarto(int numero) {
         // Estrutura de repetição: passa por todos os quartos cadastrados
-        for (int i = 1; i < this.quartos.size(); i++) {
+        for (int i = 0; i < this.quartos.size(); i++) {
             // Estrutura de seleção: verifica se o número de quartos é o mesmo
             if (this.quartos.get(i).getNumero() == numero) {
-                return this.quartos.get(numero); // retorna o quarto encontrado
+                return this.quartos.get(i); // Retorna o quarto encontrado
             }
         }
-        return null;
+        return null; // Retorna null se nenhum quarto for encontrado
     }
 }

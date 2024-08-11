@@ -26,7 +26,7 @@ public class Main {
         }
 
         // Criando uma reserva
-        Reserva reserva1 = new Reserva(quarto1, "João Silva", 3);
+        Reserva reserva1 = new Reserva(quarto1, "João Silva", 10);
 
         // Confirmando a reserva
         reserva1.confirmarReserva();

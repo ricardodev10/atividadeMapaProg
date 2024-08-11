@@ -31,4 +31,9 @@ public class Quarto {
             System.out.println("Quarto já está disponível.");
         }
     }
+
+    // Adicionado para verificar se existe quarto disponível
+    public boolean isDisponivel() {
+        return disponivel;
+    }
 }

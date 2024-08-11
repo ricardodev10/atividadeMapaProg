@@ -13,10 +13,18 @@ public class Reserva {
 
     // Métodos
     public double calcularValor() {
-        return quarto.getPrecoDiaria() * dias;
+        double valor = quarto.getPrecoDiaria() * dias;
+        if (dias >= 10) {
+            valor *= 0.9; // Aplica desconto de 10%
+        }
+        return valor;
     }
 
     public void confirmarReserva() {
-        quarto.reservar();
+        if (quarto != null && quarto.isDisponivel()) { // Usando o método isDisponivel()
+            quarto.reservar();
+        } else {
+            System.out.println("O quarto já está reservado.");
+        }
     }
 }
